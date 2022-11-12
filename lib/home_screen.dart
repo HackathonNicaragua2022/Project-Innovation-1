@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:turistic/chatbot.dart';
 import 'package:turistic/cultura.dart';
 import 'package:turistic/galery.dart';
 import 'package:turistic/map.dart';
@@ -174,7 +175,14 @@ class MenuLateral extends StatelessWidget{
           ),
           new ListTile(
             title: Text("Turi operadora"),
-            onTap: (){},
+            onTap: (){
+
+              Navigator.push
+                (
+                  context,
+                  MaterialPageRoute(builder: (context) =>  chatbot()));
+
+            },
           ),
           new ListTile(
             title: Text("Mas sobre las culturas"),
