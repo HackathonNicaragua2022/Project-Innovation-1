@@ -17,7 +17,7 @@ class IntroScreen extends StatelessWidget {
           width: 300,
         ),
         image: Center(
-          child: Lottie.asset('assets/gallery2-icon-animation.json',width: 450,height: 400, ),
+          child: Lottie.network('https://assets9.lottiefiles.com/private_files/lf30_nzsbtndw.json',width: 450,height: 400, ),
         ),
         decoration: const PageDecoration(
             titleTextStyle: TextStyle(
@@ -34,7 +34,7 @@ class IntroScreen extends StatelessWidget {
           width: 300,
         ),
         image: Center(
-          child: Lottie.asset('assets/live-green2.json',width: 450,height: 400,),
+          child: Lottie.network('https://assets1.lottiefiles.com/packages/lf20_uenrvn87.json',width: 450,height: 400,),
         ),
         decoration: const PageDecoration(
             titleTextStyle: TextStyle(
@@ -51,7 +51,7 @@ class IntroScreen extends StatelessWidget {
           width: 300,
         ),
         image: Center(
-          child: Lottie.asset('assets/area-map2.json',width:450, height:400,),
+          child: Lottie.network('https://assets2.lottiefiles.com/packages/lf20_svy4ivvy.json',width:450, height:400,),
         ),
         decoration: const PageDecoration(
             titleTextStyle: TextStyle(
@@ -79,6 +79,7 @@ class IntroScreen extends StatelessWidget {
     ),
 
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

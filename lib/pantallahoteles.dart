@@ -28,15 +28,15 @@ child: ListView.builder(
   itemCount: Hotel.length,
   itemBuilder:(context,index){
     return (index % 2 ==0)
-        ?_item_leftt(Hotel[index].nom, Hotel[index].foto)
-        :_item_right(Hotel[index].nom, Hotel[index].foto);
+        ?_item_leftt(Hotel[index].nom, Hotel[index].foto,)
+        :_item_right(Hotel[index].nom, Hotel[index].foto,);
   }
 ),
       ),
     );
   }
 }
-Widget _item_right(String texto,String imagen){
+Widget _item_right(String texto,String imagen, ){
   return Row(
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona' ),)),
@@ -44,7 +44,7 @@ Widget _item_right(String texto,String imagen){
     ],
   );
 }
-Widget _item_leftt(String texto,String imagen){
+Widget _item_leftt(String texto,String imagen,){
   return Row(
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)
@@ -359,7 +359,7 @@ Widget _item_leftt6(String texto,String imagen){
     ],
   );
 }
-//Pantalla de Salon de restaurantes//
+//Pantalla de restaurantes//
 class Pantalladetalle7 extends StatefulWidget {
   const Pantalladetalle7({Key key}) : super(key: key);
   @override
@@ -397,7 +397,7 @@ Widget _item_right7(String texto,String imagen){
   return Row(
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)),
-      Expanded(flex: 1, child: Image.asset("assets/"+imagen,width: 100,height: 140,))
+      Expanded(flex: 1, child: Image.network(""+imagen,width: 100,height: 140,))
     ],
   );
 }
@@ -406,7 +406,7 @@ Widget _item_leftt7(String texto,String imagen){
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)
       ),
-      Expanded(flex: 1, child: Image.asset("assets/"+imagen,width: 100,height: 140,))
+      Expanded(flex: 1, child: Image.network(""+imagen,width: 100,height: 140,))
     ],
   );
 }
@@ -448,7 +448,7 @@ Widget _item_right8(String texto,String imagen){
   return Row(
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)),
-      Expanded(flex: 1, child: Image.asset("assets/"+imagen,width: 100,height: 140,))
+      Expanded(flex: 1, child: Image.asset("assets/actividades/"+imagen,width: 100,height: 140,))
     ],
   );
 }
@@ -457,7 +457,7 @@ Widget _item_leftt8(String texto,String imagen){
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)
       ),
-      Expanded(flex: 1, child: Image.asset("assets/"+imagen,width: 100,height: 140,))
+      Expanded(flex: 1, child: Image.asset("assets/actividades/"+imagen,width: 100,height: 140,))
     ],
   );
 }
@@ -512,7 +512,7 @@ Widget _item_leftt9(String texto,String imagen){
     ],
   );
 }
-//Pantalla de Salon de viajes//
+//Pantalla de Salon de belleza/
 class Pantalladetalle10 extends StatefulWidget {
   const Pantalladetalle10({Key key}) : super(key: key);
   @override
@@ -563,7 +563,7 @@ Widget _item_leftt10(String texto,String imagen){
     ],
   );
 }
-//Pantalla de Salon de tiendas//
+//Pantalla de tiendas//
 class Pantalladetalle11 extends StatefulWidget {
   const Pantalladetalle11({Key key}) : super(key: key);
   @override
@@ -588,7 +588,7 @@ class _Pantalladetalle11State extends State<Pantalladetalle11> {
         child: ListView.builder(
             itemCount: Tienda.length,
             itemBuilder:(context,index){
-              return (index % 2 ==0)
+              return (index % 10 ==0)
                   ?_item_leftt11(  Tienda[index].nom,    Tienda[index].foto)
                   :_item_right11(  Tienda[index].nom,  Tienda[index].foto);
             }
@@ -601,7 +601,7 @@ Widget _item_right11(String texto,String imagen){
   return Row(
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)),
-      Expanded(flex: 1, child: Image.asset("assets/"+imagen,width: 100,height: 140,))
+      Expanded(flex: 1, child: Image.network(""+imagen,width: 100,height: 140,))
     ],
   );
 }
@@ -610,7 +610,7 @@ Widget _item_leftt11(String texto,String imagen){
     children: <Widget>[
       Expanded(flex: 1,child: Text(texto,style:TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Figerona'),)
       ),
-      Expanded(flex: 1, child: Image.asset("assets/"+imagen,width: 100,height: 140,))
+      Expanded(flex: 1, child: Image.asset(""+imagen,width: 100,height: 140,))
     ],
   );
 }

@@ -12,7 +12,7 @@ class _MultiservState extends State<Multiserv> {
     return Scaffold(
       backgroundColor: Color(0xFFebe73e),
       appBar: new AppBar(
-        title: Text("Turistic Bailawalara") ,
+        title: Text("Turistic Bailawalara"),
         backgroundColor: Colors.orange[900],
       ),
       body: Container(

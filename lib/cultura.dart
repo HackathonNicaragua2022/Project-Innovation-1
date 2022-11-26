@@ -12,7 +12,7 @@ class _CulturasState extends State<Culturas> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFF4cb6bd),
+        backgroundColor: Color(0xFFE3D2D2),
         appBar: new AppBar(
           title: Text("Turistic Bailawalara") ,
           backgroundColor: Colors.orange[900],
@@ -21,7 +21,7 @@ class _CulturasState extends State<Culturas> {
             padding: EdgeInsets.only(left: 10, top: 300, right: 10, bottom: 50,),
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/turistic_baila_walara-removebg-preview.png",),
+                    image: AssetImage("assets/turistic_baila_walara__trans.png",),
                     alignment: Alignment.topCenter
                 )),
             child:
@@ -30,10 +30,10 @@ class _CulturasState extends State<Culturas> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    //icono de live//
+                    ///icono de etnias//
                     Column(
                       children: <Widget>[
-                        Lottie.asset("assets/89981-walking-person.json",width: 100, height: 100),
+                        Lottie.network("https://assets9.lottiefiles.com/packages/lf20_tbbtmun4.json",width: 100, height: 100),
                         Padding(
                           padding: EdgeInsets.all(10),
                           child: ElevatedButton(
@@ -41,7 +41,8 @@ class _CulturasState extends State<Culturas> {
                               Navigator.push
                                 (
                                   context,
-                                  MaterialPageRoute(builder: (context) =>  etnias()));
+                                  MaterialPageRoute(builder: (context) =>  etnias()//
+                              ));
                             },
                             child: SizedBox(
                               width: 65,
@@ -55,10 +56,10 @@ class _CulturasState extends State<Culturas> {
                         )
                       ],
                     ),
-                    //icono de mapa//
+                    ///icono de diccionario//
                     Column(
                       children: <Widget>[
-                        Lottie.asset("assets/16971-speak-and-talk.json",width: 100, height: 100),
+                        Lottie.network("https://assets4.lottiefiles.com/packages/lf20_hINqv3.json",width: 100, height: 100),
                         Padding(
                           padding: EdgeInsets.all(10),
                           child: ElevatedButton(
@@ -72,7 +73,7 @@ class _CulturasState extends State<Culturas> {
                               width: 60,
                               height: 50,
                               child: Center(
-                                child: Text("Frases y Hablar",
+                                child: Text("nuestro idioma",
                                   textAlign: TextAlign.center,style: TextStyle(fontSize: 15),),
                               ),
                             ),
@@ -80,14 +81,21 @@ class _CulturasState extends State<Culturas> {
                         )
                       ],
                     ),
+                    ///comida
                     Column(
                       children: <Widget>[
-                        Lottie.asset("assets/99276-loading-utensils.json",width: 100, height: 100),
+                        Lottie.network("https://assets1.lottiefiles.com/packages/lf20_dlihd9az.json",width: 100, height: 100),
                         Padding(
                           padding: EdgeInsets.all(10),
                           child: ElevatedButton(
                             onPressed: (
-                                ) {},
+                                ) {
+                              Navigator.push
+                                (
+                                  context,
+                                  MaterialPageRoute(builder: (context) =>  gastronomia()));
+
+                            },
                             child: SizedBox(
                               width: 50,
                               height: 50,

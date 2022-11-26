@@ -2,26 +2,27 @@ class Hoteles{
   int id;
   String nom;
   String foto;
-  String categoria;
-  Hoteles(this.id, this.nom, this.foto,this.categoria);
+  String Direccion;
+
+  Hoteles(this.id, this.nom, this.foto,this.Direccion,);
 }
 final Hotel = [
-  Hoteles(1, "Nombre:""  ""Hotel ""Monter "
-      "Direccion: ""Barrio Libertad frente al estadio","Monter.jpg",""),
-  Hoteles(2, "Nombre: ""Hotel ""Frayser  " ""
-      " Direccion: ""Barrio Libertad frente al estadio" , "hotel frayser.jpg",""),
-  Hoteles(3, "Nombre: ""Hotel Casa museo "" Direccion: ""Barrio Libertad frente al estadio","casa museo.jpg",""),
-  Hoteles(4, "Nombre: ""Hotel "" Crisvi  " ""
-      " Direccion: ""Barrio Loma Verde" , "hotel frayser.jpg",""),
-  Hoteles(5, "Nombre: ""Hotel "" Wanky  " ""
-      " Direccion: ""Barrio Loma Verde" , "hospedaje wanki.jpg","" "Numero:""" "2792-1545" ""),
+  Hoteles(1, "Nombre:""  ""Hotel ""Monter " "Calif: ★★★★☆"
+      "Direccion: ""Barrio Libertad frente al estadio","Monter.jpg","★★★★☆",),
+  Hoteles(2, "Nombre: ""Hotel ""Frayser  " "Calif: ★★★★☆"
+      " Direccion: ""Barrio Libertad frente al estadio" , "hotel frayser.jpg","",),
+  Hoteles(3, "Nombre: ""Hotel Casa museo " "Calif: ★★★★☆"" Direccion: ""Barrio Libertad frente al estadio","casa museo.jpg",""),
+  Hoteles(4, "Nombre: ""Hotel "" Crisvi  " "Calif: ★★★★☆"
+      " Direccion: ""Barrio Loma Verde" , "crisvi.jpg","★★★★☆",),
+  Hoteles(5, "Nombre: ""Hotel "" Wanky  " "Calif: ★★★★☆"
+      " Direccion: ""Barrio Loma Verde" , "hospedaje wanki.jpg","" "Numero:""" "2792-1545",),
 ];
 class Dentistas{
   int id;
   String nom;
   String foto;
-  String categoria;
-  Dentistas(this.id, this.nom, this.foto,this.categoria);
+  String Direccion;
+  Dentistas(this.id, this.nom, this.foto,this.Direccion);
 }
 final Dentista = [
   Dentistas(1, "Nombre:""  ""Hotel ""Monter "
@@ -55,9 +56,9 @@ class Deliverys{
   Deliverys(this.id, this.nom, this.foto,this.categoria);
 }
 final Delivery = [
-  Deliverys(1, "Nombre:""  ""AR ""Delivery "
+  Deliverys(1, "Nombre:""  ""AR ""Delivery " "Calif: ★★★★☆"
       "Contacto: ""8855-4010 o 5877-5522","AR_delivery_88554010_58775522.jpg",""),
-  Deliverys(2, "Nombre:"" ""Mandaditos" "Bilwi"
+  Deliverys(2, "Nombre:"" ""Mandaditos" "Bilwi" "Calif: ★★★★☆"
       "Contacto: ""8353-8872" , "Mandadito _bilwi_8353 _8872.jpg",""),
 
 
@@ -116,11 +117,11 @@ class Restaurantes{
   Restaurantes(this.id, this.nom, this.foto,this.categoria);
 }
 final Restaurante= [
-  Restaurantes(1, "Nombre:""  ""Hotel ""Monter "
-      "Direccion: ""Barrio Libertad frente al estadio","Dentista1.jpg",""),
-  Restaurantes(2, "Nombre: ""Hotel ""Frayser  " ""
-      " Direccion: ""Barrio Libertad frente al estadio" , "hotel frayser.jpg",""),
-  Restaurantes(3, "Nombre: ""Hotel Casa Museo "" Direccion: ""Barrio Libertad frente al estadio","casa museo.jpg",""),
+  Restaurantes(1, "Nombre:""  ""La esquina ""del sabor " "Calif: ★★★★☆"
+      "Direccion: ""frente al escuela moravo JAC","https://scontent.fmga3-1.fna.fbcdn.net/v/t39.30808-6/294809754_165950372612476_1113870702335584715_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Gnm_fEL_nZYAX9AENcV&_nc_ht=scontent.fmga3-1.fna&oh=00_AfBvZHTEuR0kyDywA3iqYYtSfFi6IRx0GCfHiD5HpcJGxg&oe=63825C89",""),
+  Restaurantes(2, "Nombre: ""Famahi""" "Calif: ★★★★☆"
+      " Direccion: ""Barrio Libertad frente al estadio" , "https://scontent.fmga3-2.fna.fbcdn.net/v/t1.6435-9/131914231_435088621202442_7611952292924173362_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=l4whacgP2R0AX9Oo10-&_nc_ht=scontent.fmga3-2.fna&oh=00_AfAxAK8q4NZMNBVs8yGy78VWx9mFDQslt58m4LFFPrzRYQ&oe=63A4FF84",""),
+  Restaurantes(3, "Nombre: "" Kabu Payaska " "Calif: ★★★★☆"  " Direccion: ""Barrio Libertad frente al estadio","https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/214633877_1640099886193768_1460748533739137726_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9xDJDc3CJeYAX9sRjTo&tn=HPRCc-3b0xKE_8Iv&_nc_ht=scontent-mia3-1.xx&oh=00_AfD2oVeHQuQnIlR6iSKItinIfgdkLZ2u4o58jz__Hd81eA&oe=6386E2F2",""),
 
 ];
 class Actividades{
@@ -131,7 +132,7 @@ class Actividades{
   Actividades(this.id, this.nom, this.foto,this.categoria);
 }
 final Actividad= [
-  Actividades(1, "Nombre:""  ""BR ""Fitness "
+  Actividades(1, "Nombre:""  ""BR ""Fitness " "Calif: ★★★★☆"
       "Direccion: ""Barrio Libertad frente a lado de la libreria mas x menos","IMG_8371.JPG",""),
   Actividades(2, "Nombre: ""Playa ""Malecon  " ""
       " Direccion: "" Playa del malecon" , "313495890_782040582868158_7944624650171014650_n.jpg",""),
@@ -177,11 +178,12 @@ class Tiendas{
   Tiendas(this.id, this.nom, this.foto,this.categoria);
 }
 final Tienda= [
-  Tiendas(1, "Nombre:""  ""Hotel ""Monter "
-      "Direccion: ""Barrio Libertad frente al estadio","Dentista1.jpg",""),
-  Tiendas(2, "Nombre: ""Hotel ""Frayser  " ""
-      " Direccion: ""Barrio Libertad frente al estadio" , "hotel frayser.jpg",""),
-  Tiendas(3, "Nombre: ""Hotel Casa Museo "" Direccion: ""Barrio Libertad frente al estadio","casa museo.jpg",""),
+  Tiendas(1, "Nombre:""  ""Creaciones ""Beatriz"
+      "Direccion: ""Barrio Libertad ","https://scontent.fmga3-2.fna.fbcdn.net/v/t39.30808-6/315287849_157520260316638_900485648598673791_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=Gw0hDbaqlT0AX9MrASg&tn=HPRCc-3b0xKE_8Iv&_nc_ht=scontent.fmga3-2.fna&oh=00_AfBnJ2Z82tIUuo7RY3kwsRkXkqNKILCSgL71hncb-XyZgA&oe=6383B7D5",""),
+  Tiendas(2, "Nombre: ""Tienda ""Massiel  " ""
+      " Direccion: ""Barrio Libertad frente al estadio" , "https://scontent.fmga3-1.fna.fbcdn.net/v/t39.30808-6/315552182_157520050316659_4679982232462647173_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=MSPEIGrRS4sAX_x047f&_nc_ht=scontent.fmga3-1.fna&oh=00_AfDndIzCbILyeSbELITRbxwXYfsn9J3xVa0AGg0CVe81PA&oe=6381CF73",""),
+  Tiendas(3, "Nombre: ""Tienda Yalu Glam "" Direccion: ""Barrio 19 de julio","https://scontent.fmga3-2.fna.fbcdn.net/v/t39.30808-6/245951273_400100078311049_6933884636203480439_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=avE2_-jCehEAX-SzEaa&_nc_ht=scontent.fmga3-2.fna&oh=00_AfDi3HE5c_y4I6dURcZqQNnLXmhoc0QHeIej9Kuy1ZHbzA&oe=6382E12F",""),
+  Tiendas(4, "Nombre: ""La Curacao "" Direccion: ""Barrio Libertad","https://scontent.fmga3-1.fna.fbcdn.net/v/t39.30808-6/316237789_157519886983342_1092720356037948747_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=cJnDWX6UMf8AX-eZ7Vg&_nc_ht=scontent.fmga3-1.fna&oh=00_AfAjirLHmp7hTmFxuqZIrZFRcnyExedKYwRXzhf45J3nQA&oe=63830427",""),
 
 ];
 class Bancos{
